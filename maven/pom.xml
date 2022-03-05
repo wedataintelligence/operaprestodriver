@@ -72,7 +72,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>2.35.0</version>
+      <version>2.36.0</version>
     </dependency>
   </dependencies>
 
@@ -95,9 +95,9 @@
             <phase>generate-sources</phase>
             <configuration>
               <tasks>
-                <delete dir="src/main/java" />
+                <delete dir="src/main/java"/>
                 <copy todir="src/main/java" includeEmptyDirs="false">
-                  <fileset dir="../src" />
+                  <fileset dir="../src"/>
                 </copy>
               </tasks>
             </configuration>
@@ -110,8 +110,8 @@
             <phase>generate-resources</phase>
             <configuration>
               <tasks>
-                <mkdir dir="target/classes" />
-                <echo message="${version}" file="target/classes/VERSION" />
+                <mkdir dir="target/classes"/>
+                <echo message="${version}" file="target/classes/VERSION"/>
               </tasks>
             </configuration>
             <goals>
@@ -124,7 +124,7 @@
             <configuration>
               <tasks>
                 <copy todir="target/classes">
-                  <fileset dir="../src" includes="**/*.properties" />
+                  <fileset dir="../src" includes="**/*.properties"/>
                 </copy>
               </tasks>
             </configuration>
